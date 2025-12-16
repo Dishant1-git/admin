@@ -21,6 +21,7 @@ const transaction_controller = require('../controller/Admin/transaction_controll
 const subCategory_controller = require('../controller/Admin/subCategory_controller');
 
 
+router.get('/', (req, res) => res.redirect('/login_page'))
 router.get('/login_page', user_controller.login_page)
 router.post('/Login', user_controller.Login)
 router.get('/forgot_password', dashboard_controller.forgot_password)
